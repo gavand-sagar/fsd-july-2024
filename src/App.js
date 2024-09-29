@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import StateDemo from './StateDemo';
+import ToggleDemo from './ToggleDemo';
 
 function App() {
   return (
     <div className="App">
-      <StateDemo/>
+      <ToggleDemo/>
     </div>
   );
 }
