@@ -52,3 +52,11 @@
 .extra-small-text {
   font-size: 0.4em;
 }
+
+.red-bg {
+  background-color: red;
+}
+
+.green-bg {
+  background-color: green;
+}
