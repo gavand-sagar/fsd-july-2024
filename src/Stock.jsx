@@ -2,7 +2,7 @@
 export default function Stock({ newValue, oldValue, name }) {
     let change = (newValue - oldValue).toFixed(2);
     let changePercent = (change * 100 / oldValue).toFixed(2)
-    return (<fieldset>
+    return (<fieldset className="stock-item">
       {name} {newValue}
       <br />
       <span className={(change >= 0 ? "green small-text" : "red small-text")}>{change}</span>

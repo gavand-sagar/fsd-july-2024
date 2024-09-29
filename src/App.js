@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import ListRenderingDemo from './ListRenderingDemo';
+import ListRenderingWithObjects from './ListRenderingWithObjects';
 
 function App() {
   return (
     <div className="App">
-      <ListRenderingDemo/>
+      <ListRenderingWithObjects/>
     </div>
   );
 }
