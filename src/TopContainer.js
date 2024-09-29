@@ -1,5 +1,10 @@
 import React from 'react'
 
+// Props for customization
+function MyButton({ content }) {
+    return (<span class="button">{content}</span>)
+}
+
 export default function TopContainer() {
     return (
         <div class="top-container">
@@ -9,11 +14,9 @@ export default function TopContainer() {
             <p>20 Hours</p>
             <p class="small-text">Skills</p>
             <p>
-                <span class="button">HTML</span>
-                <span class="button">CSS</span>
-                <span class="button">JQuery</span>
-                <span class="button">Web Development</span>
-                <span class="button">Web Hosting</span>
+                <MyButton content={"HTML"}/>
+                <MyButton content={"CSS"}/>
+                <MyButton content={"JQuery"}/>
             </p>
         </div>
     )
