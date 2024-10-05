@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from 'react'
+import ChildComponent from './ChildComponent';
 
 export default function UseEffectsDemo() {
 
     //console.log("This is on every Re-Render")
 
     let [counter1, setCounter1] = useState(0)
-    function inc1() {
-        setCounter1(counter1 + 1)
-    }
-
+   
 
     let [counter2, setCounter2] = useState(0)
     function inc2() {
-        setCounter2(counter2 + 1)
+        setCounter2(counter2 + 1);
     }
     // when you want to execute some logic on page load only
     useEffect(() => {
@@ -30,10 +28,10 @@ export default function UseEffectsDemo() {
     }, [])
 
     // when you want to execute some logic on page load as well as state change
-    useEffect(() => {
-        // this logic will execute only and only when couter1 changes
-        console.log("Counter 2 changed");
-    }, [counter2])
+    // useEffect(() => {
+    //     // this logic will execute only and only when couter1 changes
+    //     console.log("Counter 1 changed");
+    // }, [counter1])
 
 
 
@@ -47,8 +45,10 @@ export default function UseEffectsDemo() {
             <span>Counter2 Value = {counter2} </span>
             <br />
             <br />
-            <button onClick={() => inc1()}>Inc 1</button>
+            <button onClick={() => setCounter1(counter1 + 1)}>Inc 1</button>
             <button onClick={() => inc2()}>Inc 2</button>
+
+            <ChildComponent counter1={counter1}/>
         </div>
     )
 }
