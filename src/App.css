@@ -61,7 +61,7 @@
   background-color: green;
 }
 
-.my-link{
+.my-link {
   background-color: #232f3e;
   padding: 8px;
   color: white;
@@ -69,12 +69,12 @@
   border: 2px solid #232f3e;
 }
 
-.my-link:hover{
+.my-link:hover {
   border: 2px solid white;
 }
 
-.round-btn{
-  background: linear-gradient(to left bottom,red,purple);
+.round-btn {
+  background: linear-gradient(to left bottom, red, purple);
   border: none;
   padding: 5px;
   color: white;
@@ -83,7 +83,7 @@
   margin-right: 15px;
 }
 
-.stock-item{
+.stock-item {
   margin: 10px;
   border-radius: 5px;
   display: inline-block;
@@ -91,6 +91,11 @@
   transition: 0.5s;
 }
 
-.stock-item:hover{
+.stock-item:hover {
   scale: 1.1;
-} 
+}
+
+.error {
+  font-size: 0.7em;
+  color: red;
+}
