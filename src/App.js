@@ -12,6 +12,7 @@ import UseEffectsDemo from './UseEffectsDemo';
 import ApiDemo from './ApiDemo';
 import DogsImagesApi from './DogsImagesApi';
 import UsersApi from './UsersApi';
+import HookForms from './HookForms';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/api-demo' element={<ApiDemo />} />
         <Route path='/dogs-image-api' element={<DogsImagesApi />} />
         <Route path='/users-api' element={<UsersApi />} />
+        <Route path='/hook-form' element={<HookForms />} />
       </Routes>
     </div>
   );
