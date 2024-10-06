@@ -11,6 +11,7 @@ import InterestCalculator from './InterestCalculator';
 import UseEffectsDemo from './UseEffectsDemo';
 import ApiDemo from './ApiDemo';
 import DogsImagesApi from './DogsImagesApi';
+import UsersApi from './UsersApi';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/stock-list' element={<ListRenderingWithObjects />} />
         <Route path='/api-demo' element={<ApiDemo />} />
         <Route path='/dogs-image-api' element={<DogsImagesApi />} />
+        <Route path='/users-api' element={<UsersApi />} />
       </Routes>
     </div>
   );
