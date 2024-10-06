@@ -1,3 +1,4 @@
+import { Avatar, Button, Paper, Rating, Typography } from '@mui/material'
 import axios from 'axios'
 import React, { useState } from 'react'
 
@@ -17,29 +18,28 @@ export default function UsersApi() {
     }
     return (
         <div>
-            <h1>UsersApi</h1>
-            <button onClick={() => apiCall()}>Call API</button>
+            <Typography variant='h1' component={'h1'}>UsersApi</Typography>
+            <Button color='primary' onClick={() => apiCall()} variant="contained">Call API</Button>
             <hr />
             {
                 userObj != null &&
-                <div className='my-flex'>
-                    <img src={userObj.picture.large} width={'100px'} alt='User' />
+                <Paper elevation={3} sx={{ margin: '10px' }} className='my-flex'>
+                    <Avatar sx={{ width: 100, height: 100 }} src={userObj.picture.large} alt='User' />
                     <div>
-                        <div>
+                        <Typography variant='h4'>
                             {userObj.name.title} {userObj.name.first} {userObj.name.last}
-                        </div>
-                        <div>
-                           {userObj.location.city},{userObj.location.state},{userObj.location.country}
-                        </div>
-                        <div>
-                            {userObj.phone}<br/>
-                            {userObj.cell}
-                        </div>
-                        <div>
+                        </Typography>
+                        <Typography variant='body1'>
+                            {userObj.location.city},{userObj.location.state},{userObj.location.country}
+                        </Typography>
+                        <Typography variant='body2'>
+                            {userObj.phone},{userObj.cell}
+                        </Typography>
+                        <Typography variant='body2'>
                             {userObj.email}
-                        </div>
+                        </Typography>
                     </div>
-                </div>
+                </Paper>
             }
         </div>
     )
