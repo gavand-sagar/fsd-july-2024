@@ -10,6 +10,7 @@ import BasicForm from './BasicForm';
 import InterestCalculator from './InterestCalculator';
 import UseEffectsDemo from './UseEffectsDemo';
 import ApiDemo from './ApiDemo';
+import DogsImagesApi from './DogsImagesApi';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/circle/my' element={<Circle />} />
         <Route path='/stock-list' element={<ListRenderingWithObjects />} />
         <Route path='/api-demo' element={<ApiDemo />} />
+        <Route path='/dogs-image-api' element={<DogsImagesApi />} />
       </Routes>
     </div>
   );
