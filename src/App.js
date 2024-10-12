@@ -13,6 +13,7 @@ import ApiDemo from './ApiDemo';
 import DogsImagesApi from './DogsImagesApi';
 import UsersApi from './UsersApi';
 import HookForms from './HookForms';
+import PropDrilling from './PropDrilling/PropDrilling';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path='/dogs-image-api' element={<DogsImagesApi />} />
         <Route path='/users-api' element={<UsersApi />} />
         <Route path='/hook-form' element={<HookForms />} />
+        <Route path='/prop-drilling' element={<PropDrilling />} />
       </Routes>
     </div>
   );
